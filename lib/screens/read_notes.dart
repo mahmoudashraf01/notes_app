@@ -9,6 +9,7 @@ class ReadNoteScreen extends StatefulWidget {
     super.key,
   });
   QueryDocumentSnapshot doc;
+  
 
   @override
   State<ReadNoteScreen> createState() => _ReadNoteScreenState();

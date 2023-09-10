@@ -7,7 +7,6 @@ class AppStyle {
   static Color white2 = Color(0xADB5BDDD);
   static Color darkBlue = Color(0xFF000633);
   static Color darkGreen = Color.fromARGB(255, 0, 68, 62);
-  static Color ligthGreen = Color(0xddd8e2dc);
   static Color teal = Colors.teal;
   static Color appColor = Color.fromRGBO(1, 34, 43, 1);
   static Color appColor2 = Color.fromARGB(191, 0, 21, 27);
@@ -19,18 +18,21 @@ class AppStyle {
   static Color blue1 = Color(0x11175676);
   static Color blue2 = Color(0x444BA3C3);
   static Color blue3 = Color(0x888d99ae);
-  static Color blue4 = Color(0xCCCCE6F4);
+  static Color move = Color(0x66613f75);
+  static Color blue4 = Color(0xeee7ad99);
   static Color pink1 = Color(0x999d8189);
   static Color pink2 = Color(0xBBBA324F);
+  static Color pink3 = Color(0xaaa53860);
   static Color transparent = Colors.transparent;
 
   static List<Color> cardColor = [
     darkGreen,
     teal,
-    ligthGreen,
+    pink3,
     orange,
     darkYellow,
     gold,
+    move,
     darkRed,
     ligthRed,
     blue1,

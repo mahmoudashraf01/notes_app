@@ -8,3 +8,4 @@ void goTo({required BuildContext context, required Widget screen}) {
     ),
   );
 }
+

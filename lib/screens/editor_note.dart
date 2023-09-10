@@ -1,8 +1,6 @@
 import 'dart:math';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:notes_app/shared/methods/navigation.dart';
 import 'package:notes_app/styles/app_styles.dart';
 
 class NoteEditor extends StatefulWidget {
@@ -24,7 +22,10 @@ class _NoteEditorState extends State<NoteEditor> {
       appBar: AppBar(
         backgroundColor: AppStyle.cardColor[colorId],
         elevation: 0,
-        title: Text('Add New Note'),
+        title: Text(
+          'Add New Note',
+          style: AppStyle.title1Bold,
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -36,6 +37,7 @@ class _NoteEditorState extends State<NoteEditor> {
               decoration: InputDecoration(
                 border: InputBorder.none,
                 hintText: 'Note Title',
+                hintStyle: AppStyle.title1Bold,
               ),
               style: AppStyle.title1Bold,
             ),
@@ -53,10 +55,10 @@ class _NoteEditorState extends State<NoteEditor> {
               controller: _mainContentController,
               keyboardType: TextInputType.multiline,
               maxLines: null,
-              
               decoration: InputDecoration(
                 border: InputBorder.none,
                 hintText: 'Write Your Note',
+                hintStyle: AppStyle.bodyBold,
               ),
               style: AppStyle.content,
             ),
